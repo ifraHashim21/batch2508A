@@ -1,3 +1,6 @@
+ 
+
+<?php session_start(); ?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -47,12 +50,19 @@
                       >
                     </li>
                 </div>
-                    <a href="login.php">
-                      <button type="button" class="btn btn-outline-info m-2">login</button>
-                    </a>
-                    <a href="register.php">
-                      <button type="button" class="btn btn-outline-success m-2">register</button>
-                    </a>
+               
+
+<div>
+
+  <?php
+    if(isset($_SESSION['email'])){
+        echo '<a href="logout.php" class="btn btn-danger">Logout</a>';
+    } else {
+        echo '<a href="login.php" class="btn btn-info m-1">Login</a>';
+        echo '<a href="register.php" class="btn btn-success m-1">Register</a>';
+    }
+    ?>
+</div>
               </div>
             </nav>
             

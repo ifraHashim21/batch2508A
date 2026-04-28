@@ -18,6 +18,7 @@ if(isset($_POST['register'])){
 
     if($res){
         echo "user register successfuly";
+        header("location:./login.php");
     }
     else{
         echo "user not register";

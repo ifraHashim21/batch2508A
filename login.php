@@ -59,7 +59,23 @@
         </header>
 
         <main>
-            login from
+         <h1 class="text-center"> LOGIN FROM</h1>
+    <form action="logindb.php" method="POST">
+  
+    <label  class="form-label">Enter your email</label>
+  <input type="email" class="form-control" name="email">
+    <label  class="form-label">Enter your Password</label>
+  <input type="password" class="form-control" name="password">
+
+    <button type="submit" name="login" class="btn btn-primary mt-4">Login!</button>
+</div>
+
+
+
+            </form>
+
+
+
         </main>
 
                 <script
